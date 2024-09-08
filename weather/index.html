@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="weather">
+        <div class="search">
+            <input class="searchinput" type="text" placeholder="Enter city name">
+            <button class="searchbtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        <div class="error">Invalid City Name</div>
+        <div class="img"><img class="imgg"src="images/clear.png" alt="img"></div>
+        <div class="degree">1<sup>o</sup>c</div>
+        <div class="cityname">Rohtak</div>
+        <div class="info">
+            <div class="humi"><i class="fa-solid fa-water"></i> <div class="humidity"> 53%</div>
+                <p class="item">Humidity</p>
+            </div>
+            <div class="wind"><i class="fa-solid fa-wind"></i></i>  <div class="windspeed"> 5.66 km/h 
+            </div>
+                <p class="item">Wind Speed</p>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
