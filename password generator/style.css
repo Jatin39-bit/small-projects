@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: rgb(9, 9, 74);
+}
+.container{
+    margin: 150px;
+}
+h2{
+    font-size: 46px;
+    color: white;
+}
+span{
+    color: green;
+    border-bottom: solid 4px;
+    padding-bottom: 15px;
+}
+.input{
+    margin-top: 45px;
+    background: white;
+    height: 55px;
+    width: 560px;
+    border-radius: 5px;
+    outline: none;
+}
+input{
+    height: 55px;
+    width: 500px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    padding-left: 15px;
+    font-size: 20px;
+}
+.input i{
+    font-size: 25px;
+}
+button{
+    height: 45px;
+    width: 200px;
+    margin-top: 15px;
+    background: green;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    font-weight: 100;
+}
