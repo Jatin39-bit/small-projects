@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: blueviolet;
+}
+.container{
+    width: 70%;
+    max-width: 1000px;
+    margin: 70px 120px;
+}
+.head{
+    display: flex;
+    font-size: 2.1rem;
+}
+.head img{
+    height: 75px;
+    width: 75px;
+    padding-right: 15px;
+}
+.create{
+    height:45px;
+    width: 180px;
+    border: none ;
+    background: rgb(236, 230, 30);
+    border-radius: 22px;
+    font-size: 1.2rem;
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.note p{
+    border-radius: 5px;
+    height: 160px;
+    width: 500px;
+    font-size: 1.4rem;
+    border: none;
+    outline: none;
+    margin-bottom: 8px;
+    padding-left: 2px;
+    resize: none;
+    background: white;
+    position: relative;
+}
+.note p img{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 3px;
+    padding-right: 3px;
+}
+.image-container{
+    cursor: pointer;
+}
