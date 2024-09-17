@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:rgb(180, 180, 236);
+    display: flex;
+    justify-content: center;
+}
+.container{
+    background: white;
+    width: 800px;
+    margin-top:33vh;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.container h2{
+    margin-top: 25px;
+    border-bottom: 3px solid rgb(66, 66, 247);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 25px;
+    font-size: 35px;
+}
+.container p{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    height: auto;
+}
+.container h5{
+    align-self: flex-end;
+    margin-right: 20px;
+    font-weight: 400;
+    margin-bottom: 15px;
+    position: relative;
+}
+.container h5::before{
+    content: '';
+    width: 20px;
+    height: 1.5px;
+    background: rgb(66, 66, 247);
+    position: absolute;
+    top:7.5px ;
+    left: -30px;
+}
+.buttons button{
+    height: 40px;
+    width: 120px;
+    border-radius: 35px;
+    border: 1px solid rgb(66, 66, 247);
+    background: white;
+    margin-bottom: 35px;
+}
+#quote{
+    background: rgb(66, 66, 247);
+    color: white;
+    margin-right: 5px;
+}
+#tweet i{
+    color: rgb(66, 66, 247);
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+
