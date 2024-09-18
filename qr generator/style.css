@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+}
+body{
+    background: rgba(0, 0, 0, 0.765);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 400px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 50% 0;
+    
+}
+.container input{
+    margin-top: 30px;
+    height: 35px;
+    padding-left: 5px;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    border: 1px solid black;
+    outline: none;
+    font-size: 18px;
+}
+.container button{
+    height: 35px;
+    border-radius: 4px;
+    background: rgb(110, 11, 239);
+    color: white;
+    border: none;
+    margin-top: 25px;
+}
+.img{
+    height: 200px;
+    width: 200px;
+    align-self: center;
+}
+.image{
+    height: 200px;
+    width: 200px;
+    align-self: center;
+    display: none;
+}
+.error{
+    animation: shake .1s linear 10;
+}
+@keyframes shake{
+    0%{
+        transform: translateX(0);
+    }   
+    25%{
+        transform: translateX(-3px);
+    }
+    50%{
+        transform: translateX(0);
+    } 
+    75%{
+        transform: translateX(3px);
+    } 
+    100%{
+        transform: translateX(0);
+    } 
+}
