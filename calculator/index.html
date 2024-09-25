@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <input type="text" class="display">
+        <div class="btns">
+        <button class="des" onclick="ac()">AC</button>
+        <button class="des" onclick="del()">DE</button>
+        <button class="des" onclick="dot()">.</button>
+        <button class="des" class="symbol" onclick="divide()">/</button>
+        <button onclick="addnumber(7)">7</button>
+        <button onclick="addnumber(8)">8</button>
+        <button onclick="addnumber(9)">9</button>
+        <button class="des" class="symbol" onclick="mul()">*</button>
+        <button onclick="addnumber(4)">4</button>
+        <button onclick="addnumber(5)">5</button>
+        <button onclick="addnumber(6)">6</button>
+        <button class="des" class="symbol" onclick="min()">-</button>
+        <button onclick="addnumber(1)">1</button>
+        <button onclick="addnumber(2)">2</button>
+        <button onclick="addnumber(3)">3</button>
+        <button class="des" class="symbol" onclick="add()">+</button>
+        <button onclick="double()">00</button>
+        <button onclick="addnumber(0)">0</button>
+        <button class="des" id="equal" onclick="equal()">=</button>
+        </div>
+    </div>
+    <script>
+        function addnumber(num){
+            document.querySelector(".display").value += num;
+        }
+        function ac(){
+            document.querySelector(".display").value =""
+        }
+        function del(){
+            let currentvalue =document.querySelector(".display").value;
+        let newvalue=  currentvalue.slice(0,-1);
+        document.querySelector(".display").value=newvalue
+        }
+        function double(){
+            document.querySelector(".display").value+="00"
+        }
+        function dot(){
+            document.querySelector(".display").value+="."
+        }
+        function divide(){
+            document.querySelector(".display").value+="/"
+        }
+        function mul(){
+            document.querySelector(".display").value+="*"
+        }
+        function min(){
+            document.querySelector(".display").value+="-"
+        }
+        function add(){
+            document.querySelector(".display").value+="+"
+            lastvalue()
+        }
+        function equal(){
+            document.querySelector(".display").value =eval(document.querySelector(".display").value)
+        }     
+    </script>
+</body>
+</html>
