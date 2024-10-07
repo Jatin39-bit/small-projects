@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, #4b6cb7, #182848);
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #4b6cb7;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #394a8f;
+}
+
+.result-box {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 10px;
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.result-box.palindrome {
+    background-color: #a8e6cf;
+}
+
+.result-box.not-palindrome {
+    background-color: #ff8b94;
+}
+
+.result-box p {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#reversedText {
+    font-style: italic;
+    color: #555;
+}
